@@ -21,7 +21,7 @@ module.exports = {
                 exclude: /node_module/,
                 use: {
                     loader: "babel-loader",
-                    options: {
+                    options: {  // babel/preset-typescript 옵션 설정
                         presets: [
                             ['@babel/preset-typescript', { allowNamespaces: true }]
                         ]
