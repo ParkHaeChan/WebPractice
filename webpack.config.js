@@ -33,5 +33,10 @@ module.exports = {
         modules: [path.join(__dirname, "src"), "node_modules"], // 모듈 위치
         extensions: [".ts", ".js"],
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "./src/index.html", // 템플릿 위치
+        }),
+    ],
     mode: "development"
 };
