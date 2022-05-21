@@ -24,7 +24,11 @@ module.exports = {
                     options: {  // babel/preset-typescript 옵션 설정
                         presets: [
                             ['@babel/preset-typescript', { allowNamespaces: true }]
-                        ]
+                        ],
+                        plugins: [
+                            ["@babel/plugin-proposal-decorators", { "legacy": true }],
+                            ["@babel/plugin-proposal-class-properties", { loose: true }],
+                        ],
                     }
                 },
             },
@@ -39,5 +43,6 @@ module.exports = {
             template: "./src/index.html", // 템플릿 위치
         }),
     ],
-    mode: "development"
+    mode: "development",
+    devtool: "inline-source-map"
 };

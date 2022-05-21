@@ -18,10 +18,13 @@
   "homepage": "https://github.com/ParkHaeChan/WebPractice#readme",
   "devDependencies": {
     "@babel/core": "^7.17.10",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/plugin-proposal-decorators": "^7.17.12",
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-typescript": "^7.16.7",
     "babel-loader": "^8.2.5",
     "html-webpack-plugin": "^5.5.0",
+    "reflect-metadata": "^0.1.13",
     "ts-loader": "^9.3.0",
     "typescript": "^4.6.4",
     "webpack": "^5.72.1",
