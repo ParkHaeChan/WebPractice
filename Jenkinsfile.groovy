@@ -13,6 +13,8 @@ pipeline {
       //build stage 시작
       stage("build"){
         steps {
+          sh "sudo rm -r node_modules"
+          sh "sudo rm -r package-lock.json"
           sh "sudo npm install"
           sh "sudo npx webpack"
         }
