@@ -13,7 +13,7 @@ pipeline {
       //build stage 시작
       stage("build"){
         steps {
-          sh "npm install"
+          //sh "npm install"
           sh "npm run build"
         }
       }
