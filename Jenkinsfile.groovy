@@ -13,8 +13,8 @@ pipeline {
       //build stage 시작
       stage("build"){
         steps {
-          //sh "npm install"
-          sh "npm run build"
+          sh "sudo npm install"
+          sh "sudo npm run build"
         }
       }
   
