@@ -7,7 +7,10 @@ node{
 
     //build stage 시작
     stage("build"){
-      sh "echo 'start build' "
+      steps {
+        sh "npm install"
+        sh "npm run build"
+      }
     }
  
     //deploy stage 시작
