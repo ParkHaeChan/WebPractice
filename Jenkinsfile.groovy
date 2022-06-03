@@ -1,4 +1,6 @@
-node{
+pipeline {
+
+    agemt any
 
     //init stage 시작
     stage("init"){
