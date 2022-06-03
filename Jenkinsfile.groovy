@@ -14,7 +14,7 @@ pipeline {
       stage("build"){
         steps {
           sh "sudo npm install"
-          sh "sudo npm run build"
+          sh "sudo npx webpack"
         }
       }
   
