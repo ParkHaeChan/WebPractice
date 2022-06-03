@@ -5,7 +5,9 @@ pipeline {
     stages{
       //init stage 시작
       stage("init"){
-        sh "echo init"
+        steps {
+          sh "echo init"
+        }
       }
 
       //build stage 시작
@@ -18,7 +20,9 @@ pipeline {
   
       //deploy stage 시작
       stage("deploy"){
-        sh "echo 'start deploy' "
+        steps {
+          sh "echo 'start deploy' "
+        }
       }
     }
 }
